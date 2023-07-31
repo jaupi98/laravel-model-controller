@@ -10,6 +10,7 @@
         <div class="row mt-5">
           @foreach($comics as $comic)  
                 <div class="col-12 col-md-6 col-lg-3">
+                    <a href="{{route('comic.show', $comic->id)}}">
                     <div class="card">
                         <div class="card-img-top">
                             <img  class="img-fluid"src="{{ $comic->thumb }}"/>
@@ -21,6 +22,7 @@
                         </div>
                        
                     </div>
+                    </a>
                 </div>
           @endforeach
         </div>
