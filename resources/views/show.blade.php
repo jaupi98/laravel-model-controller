@@ -16,11 +16,14 @@
         </div>
         <div class="row">
             <div class="col-12 ">
-                <p>{{$comic->descrition }}</p>
+                <p>{{$comic->description }}</p>
             </div>
             <div class="col-12 col-md-6">
-                @foreach($comic->writers as $writers)
-
+                AUTORI : {{$comic->writers}}
+                
+            </div>
+            <div class="col-12 col-md-6">
+                ARTISTI : {{$comic->artists}}
                 
             </div>
         </div>
